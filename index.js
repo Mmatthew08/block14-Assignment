@@ -47,7 +47,7 @@ let length= numbers.length
 const mean=(sum/i)
 return mean
 
-    // TODO
+    // DONE
   }
   
   /**
@@ -86,5 +86,5 @@ return mean
    * @param {number[]} numbers an array of integers
    * @returns {number[]} the odd numbers in the array
    */
-  function getOdds(numbers) {
+  function getOdds(numbers) {}
     // TODO
