@@ -49,10 +49,7 @@ return mean
     // DONE
   }
   
-  /**
-   * @param {number[]} numbers an array of integers
-   * @returns {number} the smallest of the numbers
-   */
+  
   function getMin(numbers) {
     let minimum=numbers[0];
     for (let i=0;i<numbers.length;i++)
@@ -73,10 +70,7 @@ return mean
     // DONE
   }
   
-  /**
-   * @param {number[]} numbers an array of integers
-   * @returns {number} the range of the numbers (max - min)
-   */
+  
   function getRange(numbers) {
     let minimum=numbers[0];
     for (let i=0;i<numbers.length;i++)
@@ -91,29 +85,23 @@ return mean
     // DONE
   
   
-  /**
-   * @param {number[]} numbers an array of integers
-   * @returns {number[]} the even numbers in the array
-   */
-  function getEvens(numbers) {
-      let arr=[];
-     for (let i=0;i<numbers.length;i++)
-     if (i %2!==0)
-     arr.push(numbers[i]);
-     return arr}
+  
+  function getEvens(numbers) {let arr=[];
+    for (let i=0;i<numbers.length;i++)
+    if (numbers[i]%2===0)
+    arr.push(numbers[i]);
+    return arr}
+     
 
     // DONE
   
   
-  /**
-   * @param {number[]} numbers an array of integers
-   * @returns {number[]} the odd numbers in the array
-   */
-  function getOdds(numbers) {
-    let arr=[];
-     for (let i=0;i<numbers.length;i++)
-     if (i %2===0)
-     arr.push(numbers[i]);
-     return arr}
+  
+  function getOdds(numbers) { let arr=[];
+    for (let i=0;i<numbers.length;i++)
+    if (numbers[i] %2!==0)
+    arr.push(numbers[i]);
+    return arr} 
+    
   
     // DONE
