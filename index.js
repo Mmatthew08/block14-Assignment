@@ -102,7 +102,7 @@ return mean
      arr.push(numbers[i]);
      return arr}
 
-    // TODO
+    // DONE
   
   
   /**
