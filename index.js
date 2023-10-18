@@ -1,4 +1,3 @@
-
 const userInputString = prompt(
     "Please enter some integers separated by commas.",
     "1,2,3,4,5"
@@ -55,15 +54,23 @@ return mean
    * @returns {number} the smallest of the numbers
    */
   function getMin(numbers) {
-    // TODO
-  }
+    let minimum=numbers[0];
+    for (let i=0;i<numbers.length;i++)
+    if (numbers[i]<minimum) 
+    minimum=numbers[i];
+  return minimum}
+
+    // DONE
   
-  /**
-   * @param {number[]} numbers an array of integers
-   * @returns {number} the largest of the numbers
-   */
+  
+  
   function getMax(numbers) {
-    // TODO
+    let maximum=numbers[0]
+    for(let i=0; i<numbers.length;i++)
+    if (numbers[i]> maximum)
+    maximum=numbers[i]
+    return maximum
+    // DONE
   }
   
   /**
@@ -71,20 +78,42 @@ return mean
    * @returns {number} the range of the numbers (max - min)
    */
   function getRange(numbers) {
-    // TODO
-  }
+    let minimum=numbers[0];
+    for (let i=0;i<numbers.length;i++)
+    if (numbers[i]<minimum) 
+    minimum=numbers[i];
+     let maximum=numbers[0]
+    for(let i=0; i<numbers.length;i++)
+    if (numbers[i]> maximum)
+    maximum=numbers[i]
+    return (maximum-minimum)}
+
+    // DONE
+  
   
   /**
    * @param {number[]} numbers an array of integers
    * @returns {number[]} the even numbers in the array
    */
   function getEvens(numbers) {
+      let arr=[];
+     for (let i=0;i<numbers.length;i++)
+     if (i %2!==0)
+     arr.push(numbers[i]);
+     return arr}
+
     // TODO
-  }
+  
   
   /**
    * @param {number[]} numbers an array of integers
    * @returns {number[]} the odd numbers in the array
    */
-  function getOdds(numbers) {}
-    // TODO
+  function getOdds(numbers) {
+    let arr=[];
+     for (let i=0;i<numbers.length;i++)
+     if (i %2===0)
+     arr.push(numbers[i]);
+     return arr}
+  
+    // DONE
